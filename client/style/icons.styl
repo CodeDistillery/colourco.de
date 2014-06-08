@@ -1,0 +1,203 @@
+﻿@import 'nib'
+
+/********
+* Icons *
+********/
+@font-face
+  font-family 'colourcode-icomoon'
+  src url('/css/fonts/icomoon.eot?20130621')
+  src url('/css/fonts/icomoon.eot?20130621#iefix') format('embedded-opentype'), url('/css/fonts/icomoon.woff?20130621') format('woff'), url('/css/fonts/icomoon.ttf?20130621') format('truetype'), url('/css/fonts/icomoon.svg?20130621#icomoon') format('svg')
+  font-weight normal
+  font-style normal
+
+*[class*=icon]
+  font-family 'colourcode-icomoon'
+  font-weight normal
+  font-style normal
+  height 1em
+
+.icon-scheme
+  list-style none
+  margin 0
+  padding 0
+
+  li
+    position: absolute
+
+  &.scheme-none
+    li:nth-child( 1):before { content: 'a'; }
+    li:nth-child( 2):before { content: 'c'; }
+    li:nth-child( 3):before { content: 'e'; }
+    li:nth-child( 4):before { content: 'g'; }
+    li:nth-child( 5):before { content: 'i'; }
+    li:nth-child( 6):before { content: 'k'; }
+    li:nth-child( 7):before { content: 'm'; }
+    li:nth-child( 8):before { content: 'o'; }
+    li:nth-child( 9):before { content: 'q'; }
+    li:nth-child(10):before { content: 's'; }
+    li:nth-child(11):before { content: 'u'; }
+    li:nth-child(12):before { content: 'w'; }
+    &:hover
+    &.active
+      li:nth-child( 1):before { color: hsl(  0, 50%, 50%); }
+      li:nth-child( 2):before { color: hsl( 30, 50%, 50%); }
+      li:nth-child( 3):before { color: hsl( 60, 50%, 50%); }
+      li:nth-child( 4):before { color: hsl( 90, 50%, 50%); }
+      li:nth-child( 5):before { color: hsl(120, 50%, 50%); }
+      li:nth-child( 6):before { color: hsl(150, 50%, 50%); }
+      li:nth-child( 7):before { color: hsl(180, 50%, 50%); }
+      li:nth-child( 8):before { color: hsl(210, 50%, 50%); }
+      li:nth-child( 9):before { color: hsl(240, 50%, 50%); }
+      li:nth-child(10):before { color: hsl(270, 50%, 50%); }
+      li:nth-child(11):before { color: hsl(300, 50%, 50%); }
+      li:nth-child(12):before { color: hsl(330, 50%, 50%); }
+
+  &.scheme-monochrome
+    li:nth-child(1):before { content: 'u'; }
+    li:nth-child(2):before { content: 'w'; }
+    li:nth-child(3):before { content: 'a'; }
+    li:nth-child(4):before { content: 'c'; }
+    li:nth-child(5):before { content: 'e'; }
+    &:hover
+    &.active
+      li:nth-child(1):before { color: hsl(0, 40%, 40%); }
+      li:nth-child(2):before { color: hsl(0, 45%, 45%); }
+      li:nth-child(3):before { color: hsl(0, 50%, 50%); }
+      li:nth-child(4):before { color: hsl(0, 55%, 55%); }
+      li:nth-child(5):before { color: hsl(0, 60%, 60%); }
+
+  &.scheme-monochrome-dark
+    li:nth-child(1):before { content: 't'; }
+    li:nth-child(2):before { content: 'v'; }
+    li:nth-child(3):before { content: 'b'; }
+    li:nth-child(4):before { content: 'd'; }
+    li:nth-child(5):before { content: 'f'; }
+    &:hover
+    &.active
+      li:nth-child(1):before { color: hsl(0,  0%, 20%); }
+      li:nth-child(2):before { color: hsl(0,  0%, 35%); }
+      li:nth-child(3):before { color: hsl(0, 50%, 50%); }
+      li:nth-child(4):before { color: hsl(0, 55%, 55%); }
+      li:nth-child(5):before { color: hsl(0, 60%, 60%); }
+
+  &.scheme-monochrome-light
+    li:nth-child(1):before { content: 't'; }
+    li:nth-child(2):before { content: 'v'; }
+    li:nth-child(3):before { content: 'x'; }
+    li:nth-child(4):before { content: 'd'; }
+    li:nth-child(5):before { content: 'f'; }
+    &:hover
+    &.active
+      li:nth-child(1):before { color: hsl(0, 40%, 40%); }
+      li:nth-child(2):before { color: hsl(0, 45%, 45%); }
+      li:nth-child(3):before { color: hsl(0, 50%, 50%); }
+      li:nth-child(4):before { color: hsl(0,  0%, 65%); }
+      li:nth-child(5):before { color: hsl(0,  0%, 80%); }
+
+  &.scheme-analogic
+    li:nth-child(1):before { content: 's'; }
+    li:nth-child(2):before { content: 'v'; }
+    li:nth-child(3):before { content: 'a'; }
+    li:nth-child(4):before { content: 'd'; }
+    li:nth-child(5):before { content: 'g'; }
+    &:hover
+    &.active
+      li:nth-child(1):before { color: hsl(240, 40%, 40%); }
+      li:nth-child(2):before { color: hsl(300, 45%, 45%); }
+      li:nth-child(3):before { color: hsl(  0, 50%, 50%); }
+      li:nth-child(4):before { color: hsl( 60, 55%, 55%); }
+      li:nth-child(5):before { color: hsl(120, 60%, 60%); }
+
+  &.scheme-analogic-complement
+    li:nth-child(1):before { content: 'v'; }
+    li:nth-child(2):before { content: 'a'; }
+    li:nth-child(3):before { content: 'd'; }
+    li:nth-child(4):before { content: 'l'; }
+    li:nth-child(5):before { content: 'n'; }
+    &:hover
+    &.active
+      li:nth-child(1):before { color: hsl(300, 45%, 45%); }
+      li:nth-child(2):before { color: hsl(  0, 50%, 50%); }
+      li:nth-child(3):before { color: hsl( 60, 55%, 55%); }
+      li:nth-child(4):before { color: hsl(180, 40%, 40%); }
+      li:nth-child(5):before { color: hsl(180, 60%, 60%); }
+
+  &.scheme-complement
+    li:nth-child(1):before { content: 'w'; }
+    li:nth-child(2):before { content: 'a'; }
+    li:nth-child(3):before { content: 'c'; }
+    li:nth-child(4):before { content: 'l'; }
+    li:nth-child(5):before { content: 'n'; }
+    &:hover
+    &.active
+      li:nth-child(1):before { color: hsl(  0, 35%, 35%); }
+      li:nth-child(2):before { color: hsl(  0, 50%, 50%); }
+      li:nth-child(3):before { color: hsl(  0, 65%, 65%); }
+      li:nth-child(4):before { color: hsl(180, 40%, 40%); }
+      li:nth-child(5):before { color: hsl(180, 60%, 60%); }
+
+  &.scheme-triad
+    li:nth-child(1):before { content: 'w'; }
+    li:nth-child(2):before { content: 'a'; }
+    li:nth-child(3):before { content: 'c'; }
+    li:nth-child(4):before { content: 'j'; }
+    li:nth-child(5):before { content: 'p'; }
+    &:hover
+    &.active
+      li:nth-child(1):before { color: hsl(  0, 35%, 35%); }
+      li:nth-child(2):before { color: hsl(  0, 50%, 50%); }
+      li:nth-child(3):before { color: hsl(  0, 65%, 65%); }
+      li:nth-child(4):before { color: hsl(120, 60%, 60%); }
+      li:nth-child(5):before { color: hsl(240, 60%, 60%); }
+
+  &.scheme-quad
+    li:nth-child(1):before { content: 'x'; }
+    li:nth-child(2):before { content: 'b'; }
+    li:nth-child(3):before { content: 'g'; }
+    li:nth-child(4):before { content: 'm'; }
+    li:nth-child(5):before { content: 's'; }
+    &:hover
+    &.active
+      li:nth-child(1):before { color: hsl(  0, 35%, 35%); }
+      li:nth-child(2):before { color: hsl(  0, 65%, 65%); }
+      li:nth-child(3):before { color: hsl( 90, 60%, 60%); }
+      li:nth-child(4):before { color: hsl(180, 60%, 60%); }
+      li:nth-child(5):before { color: hsl(270, 60%, 60%); }
+
+
+//menu icons
+.icon-colourcode:before { content: 'C'; padding-left: 1px; }
+.icon-convert:before    { content: 'y'; }
+.icon-save:before       { content: '_'; }
+.icon-menu:before       { content: 'R'; }
+.icon-link:before       { content: 'X'; }
+.icon-author:before     { content: 'z'; }
+.icon-social:before     { content: 'Y'; }
+.icon-saturation:before { content: 'B'; }
+.icon-less:before       { content: 'K'; }
+.icon-image:before      { content: 'E'; }
+.icon-image:before      { content: 'E'; }
+.icon-help:before       { content: '?'; }
+.icon-git:before        { content: 'G'; }
+.icon-bugs:before       { content: 'A'; }
+.icon-mail:before       { content: 'M'; }
+.icon-legal:before      { content: '§'; font-family: "open sans"; display: block; margin-top: -2px; }
+.icon-twitter:before    { content: 'T'; }
+.icon-web:before        { content: 'W'; }
+.icon-codepen:before    { content: 'H'; }
+.icon-dribbble:before   { content: 'D'; }
+.icon-commercial:before { content: 'Z'; }
+.icon-trash:before      { content: 'P'; }
+.icon-left:before       { content: '<'; }
+.icon-right:before      { content: '>'; }
+.icon-up:before         { content: '^'; }
+.icon-down:before       { content: 'V'; }
+.icon-plus:before       { content: '+'; }
+.icon-minus:before      { content: '-'; }
+.icon-lock:before       { content: 'L'; }
+.icon-marker:before     { content: '0'; }
+.icon-mouse-h:before    { content: 'y'; }
+.icon-mouse-v:before    { content: 'I'; }
+.icon-mouse-s:before    { content: 'O'; }
+.icon-mouse-clk:before  { content: '1'; }
+

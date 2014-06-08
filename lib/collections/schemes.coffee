@@ -7,7 +7,7 @@
 ### client ###
 ##############
 if Meteor.isClient
-  1=1
+  1 is 1
   # client only
 
 ##############

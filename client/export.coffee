@@ -33,12 +33,17 @@ getImageDataUrl = (colors) ->
 
 @setLessExport = (a) ->
   colors = a.dataset.colors.split ";"
+  colorsFore = a.dataset.colorsfore.split ";"
   a.download = getFileName colors, ".less"
   text = ""
   for color, i in colors
     index = ""
     index = i + 1 if colors.length > 1
-    text += "@color#{index}: #{color};\n"
+    text += "@colorBack#{index}: #{color};\n"
+  for colorFore, j in colorsFore
+    _index = ""
+    _index = j + 1 if colorsFore.length > 1
+    text += "@colorFore#{_index}: #{colorFore};\n"
   a.href = getTextDataUrl text
 
 @setSassExport = (a) ->

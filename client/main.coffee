@@ -338,6 +338,12 @@ Template.menu.colorStr = () ->
     colorStr += ";" if colorIndex > 0
     colorStr += converter.stringlify.hex(converter.convert("hsl", "hex", color))
   colorStr
+Template.menu.colorStrFore = () ->
+  colorStr = ""
+  for color, colorIndex in Session.get "colors"
+    colorStr += ";" if colorIndex > 0
+    colorStr += converter.stringlify.fgc(converter.convert("hsl", "fgc", color))
+  colorStr
 Template.menu.linkImage = (hsl) ->
   colorStr = "http://api.colourco.de/export/png/"
   for color, colorIndex in Session.get "colors"
